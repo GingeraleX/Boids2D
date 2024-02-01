@@ -1,4 +1,4 @@
-```markdown
+
 # Boid Simulation
 
 ## Overview
@@ -60,5 +60,3 @@ This project is licensed under the GNU GPLv3 License - see the [LICENSE.md](./LI
 - GingeraleX
 - Email: gingeralex@cipherduo.org
 - Twitter: [@gingerale0x](https://twitter.com/gingerale0x)
-
-```
