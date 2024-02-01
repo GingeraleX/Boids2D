@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 276b77b993526b34b8d517b3c4526941, type: 3}
+  m_Name: Configuration
+  m_EditorClassIdentifier: 
+  numberOfBoids: 350
+  boidPrefab: {fileID: 4308843329111450751, guid: a1f9a65caf7a0462d8b64bee37b9602c, type: 3}
+  minSpeed: 0.5
+  maxSpeed: 4
+  rotationSpeed: 50
+  separationRange: 1.5
+  alignmentRange: 2
+  cohesionRange: 3
+  separationFactor: 0.3
+  alignmentFactor: 0.4
+  cohesionFactor: 0.1
