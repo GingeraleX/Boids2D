@@ -1,0 +1,61 @@
+<svg
+        id="Livello_1"
+        data-name="Livello 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 179.46 218.07"
+      >
+        <defs>
+          <style>
+            .logo-cls-1 {
+              fill: #13868c;
+            }
+            .logo-cls-2 {
+              fill: #0a969c;
+            }
+            .logo-cls-3 {
+              fill: #147a7e;
+            }
+            .logo-cls-4 {
+              fill: #0ea5ae;
+            }
+          </style>
+        </defs>
+        <rect
+          class="logo-cls-1"
+          x="53.75"
+          y="146.1"
+          width="71.97"
+          height="71.97"
+        />
+        <polygon
+          class="logo-cls-2"
+          points="179.46 190.74 125.71 218.07 125.71 146.1 179.46 118.77 179.46 190.74"
+        />
+        <polygon
+          class="logo-cls-3"
+          points="53.75 218.07 0 190.74 0 118.77 53.75 146.1 53.75 218.07"
+        />
+        <polyline
+          class="logo-cls-4"
+          points="0 118.77 53.75 146.1 125.71 146.1 179.46 118.77 179.46 117.62 125.71 90.29 53.75 90.29 0 117.62"
+        />
+        <rect
+          class="logo-cls-1"
+          x="53.75"
+          y="55.81"
+          width="71.97"
+          height="71.97"
+        />
+        <polygon
+          class="logo-cls-2"
+          points="179.46 100.44 125.71 127.77 125.71 55.81 179.46 28.48 179.46 100.44"
+        />
+        <polygon
+          class="logo-cls-3"
+          points="53.75 127.77 0 100.44 0 28.48 53.75 55.81 53.75 127.77"
+        />
+        <polyline
+          class="logo-cls-4"
+          points="0 28.48 53.75 55.81 125.71 55.81 179.46 28.48 179.46 27.33 125.71 0 53.75 0 0 27.33"
+        />
+      </svg>

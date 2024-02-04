@@ -10,7 +10,7 @@ public class BoidSimulation : MonoBehaviour
     
     private List<Boid> boids;
     
-    private Camera cam;
+    private Camera screenCamera;
     
     BoidSettings CreateBoidSettings()
     {
@@ -18,25 +18,30 @@ public class BoidSimulation : MonoBehaviour
         {
             mapHeight = screenHeigth,
             mapWidth = screenWidth,
+            mapDepth = screenCamera.farClipPlane/2,
             
             minSpeed = configuration.minSpeed,
             maxSpeed = configuration.maxSpeed,
+            sizeRandomModifier = configuration.sizeRandomModifier,
             rotationSpeed = configuration.rotationSpeed,
+            type = configuration.simulationType,
             
             separationRange = configuration.separationRange,
             alignmentRange = configuration.alignmentRange,
             cohesionRange = configuration.cohesionRange,
+            attractionRange = configuration.attractionRange,
             
             separationFactor = configuration.separationFactor,
             alignmentFactor = configuration.alignmentFactor,
             cohesionFactor = configuration.cohesionFactor,
+            attractionFactor = configuration.attractionFactor
         };
         return boidSettings;
     }
     
     void Start()
     {
-        cam = Camera.main;
+        screenCamera = Camera.main;
         RunScreenSizeCheck();
         
         CreateBoids();
@@ -57,10 +62,11 @@ public class BoidSimulation : MonoBehaviour
             
             GameObject boidGameObject = Instantiate(configuration.boidPrefab, position, rotation , boidsContainer.transform);
             boidGameObject.name = "Boid " + i;
+            boidGameObject.transform.localScale *= Random.Range(1f, configuration.sizeRandomModifier);
 
             Boid boidControllerInstance = boidGameObject.GetComponent<Boid>();
             
-            boidControllerInstance.Initialize(Quaternion.identity, defaultBoidSettings);
+            boidControllerInstance.Initialize(Quaternion.identity, screenCamera, defaultBoidSettings);
 
             boids.Add(boidGameObject.GetComponent<Boid>());
         }
@@ -109,10 +115,10 @@ public class BoidSimulation : MonoBehaviour
 
     void CalculateCameraPlane()
     {
-        float halfFieldOfView = cam.fieldOfView * 0.5f;
+        float halfFieldOfView = screenCamera.fieldOfView * 0.5f;
         float screenAspectRatio = Screen.width / (float)Screen.height;
 
-        screenHeigth = 2.0f * Mathf.Tan(Mathf.Deg2Rad * halfFieldOfView) * cam.farClipPlane;
+        screenHeigth = 2.0f * Mathf.Tan(Mathf.Deg2Rad * halfFieldOfView) * screenCamera.orthographicSize;
         screenWidth = screenHeigth * screenAspectRatio;
     }
 }

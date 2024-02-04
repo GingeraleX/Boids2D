@@ -1,0 +1,81 @@
+<svg
+        id="Livello_2"
+        data-name="Livello 2"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 180.5 219.1"
+      >
+        <defs>
+          <style>
+            .frame-cls-1 {
+              fill: none;
+              stroke: #fff;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-width: 1.04px;
+            }
+            #mask_rect {
+                transition-duration: 2000ms;
+            }
+          </style>
+          <mask id="mask" x="0" y="0" width="300" height="100">
+            <polygon
+              class="fill-figure"
+              id="mask_rect"
+              fill="#fff"
+              data-percent="0.5"
+              points="190 0 0 0 0 196.88 53.75 224.2 125.71 224.2 190 196.88 190 0"
+            />
+          </mask>
+        </defs>
+        <polygon
+          mask="url(#mask)"
+          fill="#283136"
+          points="179.46 0 0 0 0 196.88 53.75 224.2 125.71 224.2 179.46 196.88 179.46 0"
+        />
+        <rect
+          mask="url(#mask)"
+          class="frame-cls-1"
+          x="54.27"
+          y="146.62"
+          width="71.97"
+          height="71.97"
+        />
+        <polygon
+          mask="url(#mask)"
+          class="frame-cls-1"
+          points="179.98 191.25 126.23 218.58 126.23 146.62 179.98 119.29 179.98 191.25"
+        />
+        <polygon
+          mask="url(#mask)"
+          class="frame-cls-1"
+          points="54.27 218.58 0.52 191.25 0.52 119.29 54.27 146.62 54.27 218.58"
+        />
+        <polygon
+          mask="url(#mask)"
+          class="frame-cls-1"
+          points="0.52 119.29 54.27 146.62 126.23 146.62 179.98 119.29 179.98 118.14 163.09 109.55 126.23 128.29 54.27 128.29 17.41 109.55 0.52 118.14 0.52 119.29"
+        />
+        <rect
+          mask="url(#mask)"
+          class="frame-cls-1"
+          x="54.27"
+          y="56.32"
+          width="71.97"
+          height="71.97"
+        />
+        <polygon
+          mask="url(#mask)"
+          class="frame-cls-1"
+          points="179.98 100.96 126.23 128.29 126.23 56.32 179.98 29 179.98 100.96"
+        />
+        <polygon
+          mask="url(#mask)"
+          class="frame-cls-1"
+          points="54.27 128.29 0.52 100.96 0.52 29 54.27 56.32 54.27 128.29"
+        />
+        <polygon
+          mask="url(#mask)"
+          class="frame-cls-1"
+          points="0.52 29 54.27 56.32 126.23 56.32 179.98 29 179.98 27.85 126.23 0.52 54.27 0.52 0.52 27.85 0.52 29"
+        />
+      </svg>

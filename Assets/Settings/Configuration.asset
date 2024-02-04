@@ -14,12 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberOfBoids: 350
   boidPrefab: {fileID: 4308843329111450751, guid: a1f9a65caf7a0462d8b64bee37b9602c, type: 3}
+  simulationType: 1
   minSpeed: 0.5
   maxSpeed: 4
   rotationSpeed: 50
+  sizeRandomModifier: 1
   separationRange: 1.5
   alignmentRange: 2
   cohesionRange: 3
+  attractionRange: 25.5
   separationFactor: 0.3
   alignmentFactor: 0.4
   cohesionFactor: 0.1
+  attractionFactor: 0.45
